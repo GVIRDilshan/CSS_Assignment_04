@@ -1,0 +1,64 @@
+main{
+    width: 60vw;
+    height: 60vh;
+    overflow: hidden;
+    border: 5px solid black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+section {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    animation-name: my-animation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+div {
+    width: 60vw;
+    height: 60vh;
+}
+
+div:first-child {
+    background-image: url("../assets/animation_slide/animation_slide/slide1.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+div:nth-child(2) {
+    background-image: url("../assets/animation_slide/animation_slide/slide2.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+div:nth-child(3) {
+    background-image: url("../assets/animation_slide/animation_slide/slide3.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+div:nth-child(4) {
+    background-image: url("../assets/animation_slide/animation_slide/slide4.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes my-animation {
+    0%,20%{
+     transform: translateX(0%);
+    }
+    25%,45%{
+        transform: translateX(-25%);
+    }
+    50%,70%{
+        transform: translateX(-50%);
+    }
+    75%,100%{
+        transform: translateX(-75%);
+    }
+}
